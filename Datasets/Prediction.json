@@ -1,0 +1,772 @@
+{
+    "Paddy IGKVR-2 (IET 19795)": {
+        "Crops": "Paddy IGKVR-2 (IET 19795)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-123",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Paddy CR Dhan 501 (IET 19189)": {
+        "Crops": "Paddy CR Dhan 501 (IET 19189)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-126",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Wheat VL Gehun 907 (VL 907)": {
+        "Crops": "Wheat VL Gehun 907 (VL 907)",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "60-154",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Wheat WHD 943": {
+        "Crops": "Wheat WHD 943",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "60-157",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Millet Nandi-65 (MH-1549)": {
+        "Crops": "Millet Nandi-65 (MH-1549)",
+        "Fertilisers required": "Nitrogen,Magnesium,Potassium,Phosphorus",
+        "Cost of cultivation": "21570",
+        "Expected revenues": "59556.38316",
+        "Quantity of seeds per hectare": "5kg",
+        "Duration of cultivation": "65-70",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Lentil Pant Lentil-8(Pant L-063)": {
+        "Crops": "Lentil Pant Lentil-8(Pant L-063)",
+        "Fertilisers required": "Phosphate,Nitrogen",
+        "Cost of cultivation": "15, 824",
+        "Expected revenues": "21,136",
+        "Quantity of seeds per hectare": "60kg",
+        "Duration of cultivation": "45-60",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Barley, Wheat, Oats, Linseed"
+    },
+    "Bajra": {
+        "Crops": "Bajra",
+        "Fertilisers required": "Nitrogen,Phosphorus,Potash",
+        "Cost of cultivation": "8000",
+        "Expected revenues": "70414.47817",
+        "Quantity of seeds per hectare": "4.5kg",
+        "Duration of cultivation": "45-50",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Cardamom": {
+        "Crops": "Cardamom",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "50,000",
+        "Expected revenues": "1,45,000",
+        "Quantity of seeds per hectare": "625g",
+        "Duration of cultivation": "730-735",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Black Pepper, Arecanut, Coffee"
+    },
+    "Urad": {
+        "Crops": "Urad",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "15, 136",
+        "Expected revenues": "24,764",
+        "Quantity of seeds per hectare": "17.5kg",
+        "Duration of cultivation": "70-85",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Maize"
+    },
+    "Jowar": {
+        "Crops": "Jowar",
+        "Fertilisers required": "Nitrogen,O2P5",
+        "Cost of cultivation": "8000",
+        "Expected revenues": "10974.06918",
+        "Quantity of seeds per hectare": "38kg",
+        "Duration of cultivation": "65-75",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Paddy CR Dhan 401 (REETA)": {
+        "Crops": "Paddy CR Dhan 401 (REETA)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-124",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Millet MH 1540 (86M64) (Hybrid)": {
+        "Crops": "Millet MH 1540 (86M64) (Hybrid)",
+        "Fertilisers required": "Nitrogen,Magnesium,Potassium,Phosphorus",
+        "Cost of cultivation": "21570",
+        "Expected revenues": "59556.38316",
+        "Quantity of seeds per hectare": "2.5kg",
+        "Duration of cultivation": "65-73",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Sugarcane Karan 5 (Co 0124)": {
+        "Crops": "Sugarcane Karan 5 (Co 0124)",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "24538",
+        "Expected revenues": "893130.4967",
+        "Quantity of seeds per hectare": "40qq",
+        "Duration of cultivation": "300-451",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Moong, Cowpea, Urad"
+    },
+    "Clove": {
+        "Crops": "Clove",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "1,90,300",
+        "Expected revenues": "4,38,800",
+        "Quantity of seeds per hectare": "2kg",
+        "Duration of cultivation": "120-180",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Coffee, Coconut, Arecanut"
+    },
+    "Banana": {
+        "Crops": "Banana",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "61 592",
+        "Expected revenues": "89485",
+        "Quantity of seeds per hectare": "5000 plants",
+        "Duration of cultivation": "365-370",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Tumeric"
+    },
+    "Moong": {
+        "Crops": "Moong",
+        "Fertilisers required": "Phosphorus,Nitrogen,Rhizobium",
+        "Cost of cultivation": "5,954",
+        "Expected revenues": "40,000",
+        "Quantity of seeds per hectare": "22kg",
+        "Duration of cultivation": "60-65",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Cotton"
+    },
+    "Arhar": {
+        "Crops": "Arhar",
+        "Fertilisers required": "NPK,Rhizobium",
+        "Cost of cultivation": "40,000",
+        "Expected revenues": "42,700",
+        "Quantity of seeds per hectare": "15kg",
+        "Duration of cultivation": "120-200",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Red gram, Tur Daal"
+    },
+    "Oilseed": {
+        "Crops": "Oilseed",
+        "Fertilisers required": "Magnesium, Calcium, Potassium",
+        "Cost of cultivation": "30448",
+        "Expected revenues": "38,250",
+        "Quantity of seeds per hectare": "4kg",
+        "Duration of cultivation": "110-115",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Groundnut, Castor, Sesame, Chick pea"
+    },
+    "Tea": {
+        "Crops": "Tea",
+        "Fertilisers required": "UT 752,Dolomite",
+        "Cost of cultivation": "5,023",
+        "Expected revenues": "353763",
+        "Quantity of seeds per hectare": "1650kg",
+        "Duration of cultivation": "60-65",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Cocoa, Coffee, Rubber"
+    },
+    "Coffee": {
+        "Crops": "Coffee",
+        "Fertilisers required": "Nitrogen,Ammonium Nitrate",
+        "Cost of cultivation": "442513",
+        "Expected revenues": "2, 49,600",
+        "Quantity of seeds per hectare": "4500 seeds",
+        "Duration of cultivation": "240-270",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Arecanut, Orange, Cardamom, Pepper, Oil palm"
+    },
+    "Turmeric": {
+        "Crops": "Turmeric",
+        "Fertilisers required": "Nitrogen,Potassium,Phosphorus",
+        "Cost of cultivation": "43, 441",
+        "Expected revenues": "80548",
+        "Quantity of seeds per hectare": "2500kg Rhizomes",
+        "Duration of cultivation": "210-270",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Coconut, Arecanut"
+    },
+    "Cashewnut": {
+        "Crops": "Cashewnut",
+        "Fertilisers required": "Manure,NPK",
+        "Cost of cultivation": "10,369",
+        "Expected revenues": "91548.76",
+        "Quantity of seeds per hectare": "625 seedlings",
+        "Duration of cultivation": "1030-1035",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Groundnut, Horse gram, Cowpea"
+    },
+    "Ragi": {
+        "Crops": "Ragi",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "10000",
+        "Expected revenues": "50636.3761",
+        "Quantity of seeds per hectare": "12kg",
+        "Duration of cultivation": "5.0-7.0",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Soyabean": {
+        "Crops": "Soyabean",
+        "Fertilisers required": "MAP,Phosphorus",
+        "Cost of cultivation": "21000",
+        "Expected revenues": "70632.15286",
+        "Quantity of seeds per hectare": "75kg",
+        "Duration of cultivation": "45-65",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Soyabean, Sesame"
+    },
+    "Black Gram": {
+        "Crops": "Black Gram",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "16610",
+        "Expected revenues": "50058.97238",
+        "Quantity of seeds per hectare": "22kg",
+        "Duration of cultivation": "70-85",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Wheat"
+    },
+    "Khesari": {
+        "Crops": "Khesari",
+        "Fertilisers required": "Basal dose",
+        "Cost of cultivation": "5,954",
+        "Expected revenues": "28000",
+        "Quantity of seeds per hectare": "70kg",
+        "Duration of cultivation": "125-130",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Pigeon pea, Gram "
+    },
+    "Wheat MACS 6222": {
+        "Crops": "Wheat MACS 6222",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "60-151",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Black Pepper": {
+        "Crops": "Black Pepper",
+        "Fertilisers required": "Lime,Dolomite",
+        "Cost of cultivation": "416,024",
+        "Expected revenues": "1,65,000",
+        "Quantity of seeds per hectare": "4.5kg",
+        "Duration of cultivation": "120-150",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Arecanut"
+    },
+    "Chillies": {
+        "Crops": "Chillies",
+        "Fertilisers required": "Compost,Nitrogen,Phosphorus",
+        "Cost of cultivation": "122935",
+        "Expected revenues": "3,00,440.00",
+        "Quantity of seeds per hectare": "1kg",
+        "Duration of cultivation": "40-45",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Maize, Brinjal, Garlic"
+    },
+    "Garlic": {
+        "Crops": "Garlic",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "27,500",
+        "Expected revenues": "400000",
+        "Quantity of seeds per hectare": "250kg",
+        "Duration of cultivation": "120-150",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Chillies"
+    },
+    "Wheat MPO(JW) 1215 (MPO 1215)": {
+        "Crops": "Wheat MPO(JW) 1215 (MPO 1215)",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "60-150",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Maize PMH 5 (JH 3110)": {
+        "Crops": "Maize PMH 5 (JH 3110)",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "16000",
+        "Expected revenues": "31369.83628",
+        "Quantity of seeds per hectare": "20kg",
+        "Duration of cultivation": "95-105",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Gram, Beans"
+    },
+    "Groundnut Kadiri Harithandhra (K 1319)": {
+        "Crops": "Groundnut Kadiri Harithandhra (K 1319)",
+        "Fertilisers required": "Superphosphate,Potassium",
+        "Cost of cultivation": "22507",
+        "Expected revenues": "100177.469",
+        "Quantity of seeds per hectare": "40kg",
+        "Duration of cultivation": "110-121",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Sorghum, Millet"
+    },
+    "Groundnut GPBD 5": {
+        "Crops": "Groundnut GPBD 5",
+        "Fertilisers required": "Superphosphate,Potassium",
+        "Cost of cultivation": "22507",
+        "Expected revenues": "100177.469",
+        "Quantity of seeds per hectare": "40kg",
+        "Duration of cultivation": "110-122",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Sorghum, Millet"
+    },
+    "Lentil Pant Lentil-7(Pant L-024)": {
+        "Crops": "Lentil Pant Lentil-7(Pant L-024)",
+        "Fertilisers required": "Phosphate,Nitrogen",
+        "Cost of cultivation": "15, 824",
+        "Expected revenues": "21,136",
+        "Quantity of seeds per hectare": "60kg",
+        "Duration of cultivation": "45-61",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Barley, Wheat, Oats, Linseed"
+    },
+    "Tobacco": {
+        "Crops": "Tobacco",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "1,6,0918",
+        "Expected revenues": "3,60,709",
+        "Quantity of seeds per hectare": "3.5kg",
+        "Duration of cultivation": "90-120",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Groundnut, Pigeonpea"
+    },
+    "Tomato": {
+        "Crops": "Tomato",
+        "Fertilisers required": "Phosphorus",
+        "Cost of cultivation": "29233",
+        "Expected revenues": "79126.7",
+        "Quantity of seeds per hectare": "50g",
+        "Duration of cultivation": "50-60",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Spinach, Radish"
+    },
+    "Cocoa": {
+        "Crops": "Cocoa",
+        "Fertilisers required": "Nitrogen,Potassium,Phosphorus,Sulphur,Calcium,Magnesium,Boron,Zinc",
+        "Cost of cultivation": "20,000",
+        "Expected revenues": "80000",
+        "Quantity of seeds per hectare": "1.5kg",
+        "Duration of cultivation": "150-180",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Oil palm, Coconut"
+    },
+    "Rubber": {
+        "Crops": "Rubber",
+        "Fertilisers required": "Urea,Phosphate,Potash",
+        "Cost of cultivation": "37936",
+        "Expected revenues": "140000",
+        "Quantity of seeds per hectare": "1500 seedlings",
+        "Duration of cultivation": "120-130",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Coffee, Cocoa"
+    },
+    "Masoor": {
+        "Crops": "Masoor",
+        "Fertilisers required": "Rhizobium,Nitrogen",
+        "Cost of cultivation": "15, 824",
+        "Expected revenues": "21,136",
+        "Quantity of seeds per hectare": "42kg",
+        "Duration of cultivation": "120-130",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Linseed, Sugarcane, Wheat, Mustard"
+    },
+    "Sunhemp": {
+        "Crops": "Sunhemp",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "10091",
+        "Expected revenues": "30000",
+        "Quantity of seeds per hectare": "140kg",
+        "Duration of cultivation": "60-90",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Cowpea"
+    },
+    "Varagu": {
+        "Crops": "Varagu",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "31,900",
+        "Expected revenues": "40,000",
+        "Quantity of seeds per hectare": "10kg",
+        "Duration of cultivation": "160-165",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Millet"
+    },
+    "Paddy CR Dhan 601 (IET 18558)": {
+        "Crops": "Paddy CR Dhan 601 (IET 18558)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-125",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Wheat Netravati (NIAW 1415)": {
+        "Crops": "Wheat Netravati (NIAW 1415)",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "95-100",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Maize HSC1": {
+        "Crops": "Maize HSC1",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "16000",
+        "Expected revenues": "31369.83628",
+        "Quantity of seeds per hectare": "17kg",
+        "Duration of cultivation": "95-100",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Beans, Weeds"
+    },
+    "Millet Nandi-61 (MH-1548)": {
+        "Crops": "Millet Nandi-61 (MH-1548)",
+        "Fertilisers required": "Nitrogen,Magnesium,Potassium,Phosphorus",
+        "Cost of cultivation": "21570",
+        "Expected revenues": "59556.38316",
+        "Quantity of seeds per hectare": "2.5kg",
+        "Duration of cultivation": "65-71",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Millet 86M64 (MSH 203) (Hybrid)": {
+        "Crops": "Millet 86M64 (MSH 203) (Hybrid)",
+        "Fertilisers required": "Nitrogen,Magnesium,Potassium,Phosphorus",
+        "Cost of cultivation": "21570",
+        "Expected revenues": "59556.38316",
+        "Quantity of seeds per hectare": "2.5kg",
+        "Duration of cultivation": "65-72",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Barley Pusa Losar (BH- 380)": {
+        "Crops": "Barley Pusa Losar (BH- 380)",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "12000",
+        "Expected revenues": "43500",
+        "Quantity of seeds per hectare": "3kg",
+        "Duration of cultivation": "60-72",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Wheat"
+    },
+    "Maize DHM 119 (BH 4062)": {
+        "Crops": "Maize DHM 119 (BH 4062)",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "16000",
+        "Expected revenues": "31369.83628",
+        "Quantity of seeds per hectare": "NA",
+        "Duration of cultivation": "95-103",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Beans, Weeds"
+    },
+    "Millet HHB 226 (MH 1479)": {
+        "Crops": "Millet HHB 226 (MH 1479)",
+        "Fertilisers required": "Nitrogen,Magnesium,Potassium,Phosphorus",
+        "Cost of cultivation": "21570",
+        "Expected revenues": "59556.38316",
+        "Quantity of seeds per hectare": "2.5kg",
+        "Duration of cultivation": "65-76",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Black gram, Moong, Cowpea, Sorghum"
+    },
+    "Jute": {
+        "Crops": "Jute",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "21900",
+        "Expected revenues": "89,500",
+        "Quantity of seeds per hectare": "5kg",
+        "Duration of cultivation": "120-150",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Chillies"
+    },
+    "Paddy Chinsurah Rice (IET 19140)": {
+        "Crops": "Paddy Chinsurah Rice (IET 19140)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-120",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Paddy (CNI 383-5-11)": {
+        "Crops": "Paddy (CNI 383-5-11)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-121",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Paddy IGKVR-1 (IET 19569)": {
+        "Crops": "Paddy IGKVR-1 (IET 19569)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-122",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Onion": {
+        "Crops": "Onion",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "77850",
+        "Expected revenues": "1,00,000",
+        "Quantity of seeds per hectare": "15kg",
+        "Duration of cultivation": "80-150",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Cabbage"
+    },
+    "Cotton CNH012": {
+        "Crops": "Cotton CNH012",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "28286",
+        "Expected revenues": "63,000",
+        "Quantity of seeds per hectare": "3kg",
+        "Duration of cultivation": "80-150",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Lentil, Gram, pea"
+    },
+    "Cotton CICR-3 (CISA 614)": {
+        "Crops": "Cotton CICR-3 (CISA 614)",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "28286",
+        "Expected revenues": "63,000",
+        "Quantity of seeds per hectare": "3kg",
+        "Duration of cultivation": "105-120",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Lentil, Gram, pea"
+    },
+    "Rice": {
+        "Crops": "Rice",
+        "Fertilisers required": "Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-120",
+        "Demand of crop": "Rice",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Flax": {
+        "Crops": "Flax",
+        "Fertilisers required": "NPK,Sulfur",
+        "Cost of cultivation": "",
+        "Expected revenues": "",
+        "Quantity of seeds per hectare": "35kg",
+        "Duration of cultivation": "120-140",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Linseed, Legumes"
+    },
+    "Barley BH-902": {
+        "Crops": "Barley BH-902",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "12000",
+        "Expected revenues": "43500",
+        "Quantity of seeds per hectare": "",
+        "Duration of cultivation": "60-70",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Wheat"
+    },
+    "Sunflower": {
+        "Crops": "Sunflower",
+        "Fertilisers required": "Calcium,Sulfur",
+        "Cost of cultivation": "21000",
+        "Expected revenues": "90739.71847",
+        "Quantity of seeds per hectare": "9kg",
+        "Duration of cultivation": "90-100",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Groundnut, Maize"
+    },
+    "Maize HQPM-4": {
+        "Crops": "Maize HQPM-4",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "16000",
+        "Expected revenues": "31369.83628",
+        "Quantity of seeds per hectare": "NA",
+        "Duration of cultivation": "95-101",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Beans, Weeds"
+    },
+    "Groundnut Girnar - 3 (PBS 12160)": {
+        "Crops": "Groundnut Girnar - 3 (PBS 12160)",
+        "Fertilisers required": "Superphosphate,Potassium",
+        "Cost of cultivation": "22507",
+        "Expected revenues": "100177.469",
+        "Quantity of seeds per hectare": "40kg",
+        "Duration of cultivation": "175-180",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Maize, Sunflower, Oilseed"
+    },
+    "Dry Ginger": {
+        "Crops": "Dry Ginger",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "1,20,155.00",
+        "Expected revenues": "4,32,600.00",
+        "Quantity of seeds per hectare": "500kg",
+        "Duration of cultivation": "175-180",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Potato, Chillies, Brinjal"
+    },
+    "Horse Gram": {
+        "Crops": "Horse Gram",
+        "Fertilisers required": "Manure,NPK",
+        "Cost of cultivation": "16610",
+        "Expected revenues": "50058.97238",
+        "Quantity of seeds per hectare": "37kg",
+        "Duration of cultivation": "120-180",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Wheat"
+    },
+    "Castor Seed": {
+        "Crops": "Castor Seed",
+        "Fertilisers required": "Phosphorus,Calcium,Sulfur",
+        "Cost of cultivation": "NA",
+        "Expected revenues": "NA",
+        "Quantity of seeds per hectare": "12kg",
+        "Duration of cultivation": "7.0-10",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Oil palm seeds"
+    },
+    "Sesame": {
+        "Crops": "Sesame",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "NA",
+        "Expected revenues": "NA",
+        "Quantity of seeds per hectare": "5kg",
+        "Duration of cultivation": "40-45",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Sunflower. Groundnut"
+    },
+    "Sugarcane Karan 6 (Co 0239)": {
+        "Crops": "Sugarcane Karan 6 (Co 0239)",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "24538",
+        "Expected revenues": "893130.4967",
+        "Quantity of seeds per hectare": "40qq",
+        "Duration of cultivation": "300-450",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Maize, Potato"
+    },
+    "Peas": {
+        "Crops": "Peas",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "",
+        "Expected revenues": "NA",
+        "Quantity of seeds per hectare": "35kg",
+        "Duration of cultivation": "50-100",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Barley"
+    },
+    "Paddy RC Maniphou 11 (IET 20193)": {
+        "Crops": "Paddy RC Maniphou 11 (IET 20193)",
+        "Fertilisers required": "Potassium,Urea",
+        "Cost of cultivation": "22810",
+        "Expected revenues": "63851.8391",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "105-127",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Gram, Groundnut"
+    },
+    "Cowpea": {
+        "Crops": "Cowpea",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "NA",
+        "Expected revenues": "NA",
+        "Quantity of seeds per hectare": "25kg",
+        "Duration of cultivation": "45-90",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Maize"
+    },
+    "Maize MCH 36 (Hybrid) (DKC 9099)": {
+        "Crops": "Maize MCH 36 (Hybrid) (DKC 9099)",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "16000",
+        "Expected revenues": "31369.83628",
+        "Quantity of seeds per hectare": "NA",
+        "Duration of cultivation": "95-102",
+        "Demand of crop": "Moderate",
+        "Crops for mixed cropping": "Beans, Weeds"
+    },
+    "Pulses": {
+        "Crops": "Pulses",
+        "Fertilisers required": "Phosphorus,Calcium,Sulfur,Molybdenum",
+        "Cost of cultivation": "",
+        "Expected revenues": "",
+        "Quantity of seeds per hectare": "60kg",
+        "Duration of cultivation": "95-102",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Miaze"
+    },
+    "Sugarcane Co-0218": {
+        "Crops": "Sugarcane Co-0218",
+        "Fertilisers required": "Nitrogen",
+        "Cost of cultivation": "24538",
+        "Expected revenues": "893130.4967",
+        "Quantity of seeds per hectare": "40qq",
+        "Duration of cultivation": "300-452\n",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Maize, Potato"
+    },
+    "Wheat PDW 314": {
+        "Crops": "Wheat PDW 314",
+        "Fertilisers required": "Phosphorus,Nitrogen",
+        "Cost of cultivation": "17714",
+        "Expected revenues": "50166.54",
+        "Quantity of seeds per hectare": "112kg",
+        "Duration of cultivation": "60-152",
+        "Demand of crop": "Hgh",
+        "Crops for mixed cropping": "Horse Gram, Black Gram, Mustard"
+    },
+    "Sweet potato": {
+        "Crops": "Sweet potato",
+        "Fertilisers required": "NPK(low)",
+        "Cost of cultivation": "NA",
+        "Expected revenues": "NA",
+        "Quantity of seeds per hectare": "37kg",
+        "Duration of cultivation": "120-125",
+        "Demand of crop": "Low",
+        "Crops for mixed cropping": "Legumes, Chickpea"
+    },
+    "Cotton VBCH 2231": {
+        "Crops": "Cotton VBCH 2231",
+        "Fertilisers required": "NPK",
+        "Cost of cultivation": "28286",
+        "Expected revenues": "63,000",
+        "Quantity of seeds per hectare": "3kg",
+        "Duration of cultivation": "NA",
+        "Demand of crop": "High",
+        "Crops for mixed cropping": "Lentil, Gram, pea"
+    }
+}
