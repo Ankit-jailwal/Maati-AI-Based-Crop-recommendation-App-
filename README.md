@@ -48,6 +48,7 @@ All the files related to frontend can be found here: https://github.com/Rashi-Sr
 #### Individual contribution from Team members - 
 
 Frontend Development - Ankit Jailwal
+
 Backend Development - Shivam Sawarn and Rashi Srivastava
 
 
