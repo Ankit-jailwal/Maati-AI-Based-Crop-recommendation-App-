@@ -45,6 +45,11 @@ Multiple datasets have been used for training and obtaining relevant output purp
 
 All the files related to frontend can be found here: https://github.com/Rashi-Srivastava/Maati-/tree/frontend
 
+#### Individual contribution from Team members - 
+
+Frontend Development - Ankit Jailwal
+Backend Development - Shivam Sawarn and Rashi Srivastava
+
 
 ##### The Multi Langugae support is not available yet for the prototype as APIs used for them are generally paid.
 
