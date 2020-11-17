@@ -157,7 +157,7 @@ class about_us extends StatelessWidget with DrawerStates {
                 child: Text(
                   "Project Github Repository",
                   style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                      color: Colors.white, fontWeight: FontWeight.bold),//Bold
                 ),
               ),
             ),
