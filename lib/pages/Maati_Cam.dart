@@ -24,8 +24,6 @@ class _maaticamState extends State<maaticam> {
     final img = await ImagePicker.pickImage(source: ImageSource.camera);
     setState(() {
       _image = img;
-      print(img.path);
-      path = File(img.path);
       List<int> imageBytes = _image.readAsBytesSync();
       String imageB64 = base64Encode(imageBytes);
       //print(imageB64);
