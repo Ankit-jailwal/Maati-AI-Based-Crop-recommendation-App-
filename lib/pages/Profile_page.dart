@@ -151,7 +151,6 @@ class UserScreen extends StatelessWidget with DrawerStates{
   }
 }
 
-// Future function for navigating to IEEE SB DITU official website
 
 String _launchURL='http://www.ieeeditu.org.in/';
 Future<void> _launchInBrowser(String url) async {

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:search_widget/search_widget.dart';
 
 class history_screen extends StatelessWidget with DrawerStates{
   @override

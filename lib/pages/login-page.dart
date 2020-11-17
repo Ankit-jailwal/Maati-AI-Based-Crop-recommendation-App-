@@ -1,12 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:ieeecrop/Functions_and_route.dart';
+import 'package:ieeecrop/Animation/FadeAnimation.dart';
 import 'package:ieeecrop/main.dart';
 import 'package:ieeecrop/second_screen.dart';
 import 'package:ieeecrop/services/authentication-service.dart';
-import 'package:ieeecrop/utility/router.dart';
 
-import '../Animation/FadeAnimation.dart';
 
 class LoginPage extends StatefulWidget {
   @override

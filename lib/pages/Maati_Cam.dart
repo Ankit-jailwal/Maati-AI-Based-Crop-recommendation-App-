@@ -4,26 +4,21 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:ieeecrop/Weahter_API/resources/repository/remote/weather_api_provider.dart';
-import 'package:ieeecrop/pages/Output_screen.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:ieeecrop/Functions_and_route.dart';
 
-//Create new event or edit existing event Screen
-var _jsondata;
 
-class CreateEventScreen extends StatefulWidget with DrawerStates {
+class maaticam extends StatefulWidget with DrawerStates {
   @override
-  _CreateEventScreenState createState() => _CreateEventScreenState();
+  _maaticamState createState() => _maaticamState();
 }
 
-class _CreateEventScreenState extends State<CreateEventScreen> {
+class _maaticamState extends State<maaticam> {
   final maxLines = 5;
   File _image;
   File path;
   String _base64;
-  var _loc;
 
   Future get_image() async {
     final img = await ImagePicker.pickImage(source: ImageSource.camera);

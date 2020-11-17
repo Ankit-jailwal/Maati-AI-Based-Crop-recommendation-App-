@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc/drawer_bloc.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:ieeecrop/constants.dart';
-
 import 'custom-widgets/drawer_layout.dart';
 
 //Navigating to mainpage aka home screen

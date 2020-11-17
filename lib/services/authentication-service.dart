@@ -2,12 +2,10 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ieeecrop/main.dart';
-import 'package:ieeecrop/Animation/FadeAnimation.dart';
 import 'package:ieeecrop/second_screen.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:ieeecrop/Functions_and_route.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:ieeecrop/config/config.dart';
 
 class AuthenticationService {

@@ -4,13 +4,11 @@ import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:ieeecrop/custom-widgets/core/custom-app-bar.dart';
 import 'package:ieeecrop/main.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:ieeecrop/pages/Output_screen.dart';
 import 'package:ieeecrop/pages/about_us.dart';
 import 'package:ieeecrop/pages/history.dart';
 import 'package:ieeecrop/pages/Main_menu.dart';
 import 'package:ieeecrop/pages/Profile_page.dart';
 import 'package:ieeecrop/pages/News_feed.dart';
-import 'package:ieeecrop/pages/login-page.dart';
 import 'package:ieeecrop/second_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../Functions_and_route.dart';
@@ -233,7 +231,7 @@ class _DrawermainState extends State<Drawermain>
                         ),
                       ),
                       DrawerItem(
-                        text: "Profile",
+                        text: "My Profile",
                         onPressed: () {
                           Navigator.of(context).pop();
                           BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
@@ -271,9 +269,8 @@ class _DrawermainState extends State<Drawermain>
                         text: "Kisan call centre",
                         onPressed:
                             () {
-                          Navigator.of(context).pop();
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .Createevent);
+                              Navigator.of(context).pop();
+                              launch("tel://1800-180-1551");
                         }, //Drawer navigation to About page (Under construction)
                       ),
                       DrawerItem(
@@ -455,7 +452,7 @@ String findSelectedTitle(DrawerStates state) {
   if (state is UserScreen) {
     return "User Profile";
   }
-   else if (state is CreateEventScreen) {
+   else if (state is maaticam) {
     return "Maati Cam";
   }
   else if (state is Main_menu) {

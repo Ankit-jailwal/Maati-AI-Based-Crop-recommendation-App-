@@ -1,16 +1,13 @@
-import 'package:contactus/contactus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
-import 'package:search_widget/search_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class about_us extends StatelessWidget with DrawerStates {
   String emaila = "jailwalankit@gmail.com";
   String emails = "shivamaawarn15@gmail.com";
-  String emailr = " rashisrivastava2001@gmail.com";
+  String emailr = "rashisrivastava2001@gmail.com";
   String url = "https://openweathermap.org/api";
   String urlg = "https://github.com/Rashi-Srivastava/Maati-/tree/Frontend";
   @override

@@ -30,27 +30,17 @@ dependencies:
   http: ^0.12.0+4
   url_launcher: ^5.4.0
   flutter_secure_storage: ^3.3.1+1
-  shared_preferences: ^0.5.10
-  animations: ^1.1.2
   font_awesome_flutter: ^8.5.0
   image_picker: ^0.6.7+7
   connectivity: ^0.4.9+2
-  video_player: ^0.10.12+2
-  search_widget: ^1.0.2
   google_fonts: ^1.1.0
-  share: ^0.6.4+3
-  esys_flutter_share: ^1.0.2
   geolocator: ^6.1.6
   easy_localization: ^2.3.3
   flutter_swiper: ^1.1.6
   webfeed: ^0.4.2
-  image: ^2.1.10
   cached_network_image: ^2.0.0
   dio: ^3.0.10
   pretty_dio_logger: ^1.1.1
-  giffy_dialog:
-  flutter_spinkit: "^4.1.2"
-  contactus: ^1.1.7
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -66,7 +56,6 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
 

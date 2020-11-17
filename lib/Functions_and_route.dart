@@ -1,17 +1,9 @@
 import 'dart:async';
-import 'dart:ffi';
 import 'dart:io';
-import 'dart:typed_data';
-import 'package:esys_flutter_share/esys_flutter_share.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:ieeecrop/Weahter_API/resources/repository/remote/weather_api_provider.dart';
 import 'package:ieeecrop/main.dart';
-import 'package:ieeecrop/main.dart';
 import 'package:ieeecrop/pages/login-page.dart';
-import 'package:ieeecrop/second_screen.dart';
-import 'package:ieeecrop/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -109,16 +101,6 @@ Future getuser() async {
   }
 }
 
-//Function to check if user is authorized or not
-
-Future check_token() async{
-  var url = 'http://13.76.211.170:4000/user/me';
-  var check;
-  http.Response response =
-  await http.get(url, headers: {"token": await storage.read(key: "jwt")});
-check=response.statusCode;
-    return check;
-}
 
 //USER MODAL
 
@@ -177,27 +159,6 @@ Future getoken(String email, String password) async{
   else
     return null;
 }
-
-//Function for shareing event on different social media with event image and text
-
-String subject = "*IGNORE*";
-void share() async{
-  final ByteData bytes1 = await rootBundle.load('assets/images/000.png');
-  await Share.files(
-      'esys images',
-      {
-        '000.png': bytes1.buffer.asUint8List(),
-      },
-      '*/*',
-      text: text);
-}
-
-
-Future get_crop_para(String base64,String pos) async{
-
-
-}
-
 
 Future crop_api_call(String base64,String temperature,String date,String pos) async{
   final String url="http://20.185.199.129:5000";

@@ -6,7 +6,6 @@ import 'package:ieeecrop/pages/News_feed.dart';
 import 'package:ieeecrop/pages/Maati_Cam.dart';
 import 'package:ieeecrop/pages/Main_menu.dart';
 import 'package:ieeecrop/Functions_and_route.dart';
-import 'package:ieeecrop/pages/Output_screen.dart';
 
 enum DrawerEvents { ProfileEvent, news, Createevent,menu,history,output,about}
 
@@ -35,7 +34,7 @@ class DrawerBloc extends Bloc<DrawerEvents, DrawerStates> {
         yield output(null);
         break;
       case DrawerEvents.Createevent:
-        yield CreateEventScreen();
+        yield maaticam();
         break;
       case DrawerEvents.history:
         yield history_screen();
