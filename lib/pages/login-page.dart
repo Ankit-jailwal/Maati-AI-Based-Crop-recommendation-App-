@@ -145,13 +145,13 @@ class _LoginPageState extends State<LoginPage> {
                                        ),
                                        entryAnimation: EntryAnimation.TOP_LEFT,
                                        title: Text(
-                                         'Something went wrong!',
+                                         translations.text('login.er'),
                                          textAlign: TextAlign.center,
                                          style: TextStyle(
                                              fontSize: 22.0, fontWeight: FontWeight.w600),
                                        ),
                                        description: Text(
-                                         "Please re-enter your username and phone number.",
+                                         translations.text('login.des'),
                                          textAlign: TextAlign.center,
                                        ),
                                        onlyOkButton: true,
@@ -163,7 +163,7 @@ class _LoginPageState extends State<LoginPage> {
                               },
                               child: Center(
                                 child: Text(
-                                  "Register",
+                                  translations.text('login.register'),
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold),

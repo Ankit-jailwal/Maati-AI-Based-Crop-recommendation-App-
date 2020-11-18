@@ -85,7 +85,7 @@ class Maati_newsState extends State<Maati_news> {
   title(title) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500),
+      style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
       maxLines: 3,
       overflow: TextOverflow.ellipsis,
     );
