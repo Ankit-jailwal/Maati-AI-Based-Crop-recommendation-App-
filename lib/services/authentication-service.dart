@@ -1,10 +1,5 @@
 import 'dart:convert';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:ieeecrop/main.dart';
-import 'package:ieeecrop/second_screen.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:ieeecrop/Functions_and_route.dart';
 import 'package:http/http.dart' as http;
 import 'package:ieeecrop/config/config.dart';
 
@@ -74,40 +69,3 @@ class AuthenticationService {
   String get authenticationToken => _authToken;
 }
 
-
-// Method #2 trail version(In use now!!)
-var _page_state;
-void auth_trail() async{
-  WidgetsFlutterBinding.ensureInitialized();
-  ConnectionStatusSingleton connectionStatus =  ConnectionStatusSingleton.getInstance();
-  connectionStatus.initialize();
-  if(connectionStatus.hasConnection== false)
-  {
-    runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body:  Center(
-          child: new CircularProgressIndicator(
-            value: null,
-            strokeWidth: 7.0,
-          ),
-        ),
-      ),
-    ));
-  }
-  final token = storage.read(key: "jwt");
-  //final check = await check_token();
-  print(check);
-  if (token == null) {
-    _page_state=App();
-  } else {
-    if (check == 200 || check == 300) {
-      _page_state=mainpage();
-    } else
-      _page_state=App();
-  }
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      onGenerateRoute: generateRoute,
-      home: _page_state));
-}
