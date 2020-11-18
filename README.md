@@ -54,7 +54,7 @@ Frontend Development - Ankit Jailwal
 Backend Development - Shivam Sawarn and Rashi Srivastava
 
 ### UPDATE-
-##### Multi Language support is available for 10+ languages in this prototype.
+#### Multi Language support is available for 10+ languages in this prototype.
 
 ## "The whole app works on Cloud Backend powered by AI"
 
