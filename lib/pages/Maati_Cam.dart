@@ -4,6 +4,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:ieeecrop/Functions_and_route.dart';
@@ -108,7 +109,7 @@ class _maaticamState extends State<maaticam> {
                             constraints: BoxConstraints(
                                 minHeight: 50, maxWidth: double.infinity),
                             child: Text(
-                              "Get results",
+                              translations.text('cam.b1'),
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
@@ -132,33 +133,13 @@ class _maaticamState extends State<maaticam> {
 class output extends StatelessWidget with DrawerStates {
   var js;
   output(this.js);
-  final titles = [
-    'bike',
-    'boat',
-    'bus',
-    'car',
-    'railway',
-    'run',
-    'subway',
-    'transit'
-  ];
-  final image = [
-    Icons.directions_boat,
-    Icons.directions_boat,
-    Icons.directions_bus,
-    Icons.directions_car,
-    Icons.directions_railway,
-    Icons.directions_run,
-    Icons.directions_subway,
-    Icons.directions_transit
-  ];
   @override
   Widget build(BuildContext context) {
     return
 
       Scaffold(
         appBar: AppBar(
-          title: Text("Result"),
+          title: Text(translations.text('output.head')),
         ),
         body: ListView.builder(
         itemCount: 1,
@@ -171,7 +152,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Crops'] ?? ""),
-                    title: Text("Crop:"),
+                    title: Text(translations.text('output.o1')),
                     trailing:Image.asset("assets/crop.png")
                   ),
                 ),
@@ -179,7 +160,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Fertilisers required'] ?? ""),
-                    title: Text("Fertilisers required:"
+                    title: Text(translations.text('output.o2')
                     ),
                     trailing: Image.asset("assets/fertilizer.png")
                   ),
@@ -188,7 +169,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Cost of cultivation'] ?? ""),
-                    title: Text('Cost of cultivation:'),
+                    title: Text(translations.text('output.o3')),
                     trailing: Image.asset("assets/cul.png")
                   ),
                 ),
@@ -196,7 +177,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Expected revenues'] ?? ""),
-                    title: Text('Expected revenues:'),
+                    title: Text(translations.text('output.o4')),
                     trailing: Image.asset("assets/revenue.png")
                   ),
                 ),
@@ -205,7 +186,7 @@ class output extends StatelessWidget with DrawerStates {
                   child: ListTile(
                     subtitle:
                         Text(js['Data']['Quantity of seeds per hectare'] ?? ""),
-                    title: Text('Quantity of seeds per hectare:'),
+                    title: Text(translations.text('output.o5')),
                     trailing: Image.asset("assets/seed.png")
                   ),
                 ),
@@ -213,7 +194,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Duration of cultivation'] ?? ""),
-                    title: Text('Duration of cultivation:'),
+                    title: Text(translations.text('output.o6')),
                     trailing: Image.asset("assets/time.png")
                   ),
                 ),
@@ -221,7 +202,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Demand of crop'] ?? ""),
-                    title: Text('Demand of crop:'),
+                    title: Text(translations.text('output.o7')),
                     trailing: Image.asset("assets/demand.png")
                   ),
                 ),
@@ -229,7 +210,7 @@ class output extends StatelessWidget with DrawerStates {
                   //                           <-- Card widget
                   child: ListTile(
                     subtitle: Text(js['Data']['Crops for mixed cropping'] ?? ""),
-                    title: Text('Crops for mixed cropping:'),
+                    title: Text(translations.text('output.o8')),
                     trailing:Image.asset("assets/mix.png")
                   ),
                 ),

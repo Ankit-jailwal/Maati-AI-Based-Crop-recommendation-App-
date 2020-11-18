@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:ieeecrop/Animation/FadeAnimation.dart';
+import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:ieeecrop/main.dart';
 import 'package:ieeecrop/second_screen.dart';
 import 'package:ieeecrop/services/authentication-service.dart';
@@ -25,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget buildTextField(String hintText) {
     return new TextField(
-      controller: hintText == "Name" ? namecontroller : phonecontroller,
+      controller: hintText == translations.text('login.name')? namecontroller : phonecontroller,
       decoration: InputDecoration(
         labelText: hintText,
         labelStyle: TextStyle(
@@ -35,8 +36,8 @@ class _LoginPageState extends State<LoginPage> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.0),
         ),
-        prefixIcon: hintText == "Name" ? Icon(Icons.email) : Icon(Icons.lock),
-        suffixIcon: hintText == "Phone number"
+        prefixIcon: hintText == translations.text('login.name') ? Icon(Icons.email) : Icon(Icons.lock),
+        suffixIcon: hintText == translations.text('login.number')
             ? IconButton(
                 onPressed: _toggleVisibility,
                 icon: _isHidden
@@ -45,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             : null,
       ),
-      obscureText: hintText == "Phone number" ? _isHidden : false,
+      obscureText: hintText == translations.text('login.number')? _isHidden : false,
       autofocus: true,//Obscure logic
     );
   }
@@ -92,11 +93,11 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                             child: Column(
                               children: <Widget>[
-                                buildTextField("Name"),
+                                buildTextField(translations.text('login.name')),
                                 SizedBox(
                                   height: 9.0,
                                 ),
-                                buildTextField("Phone number"),
+                                buildTextField(translations.text('login.number')),
                               ],
                             ),
                           )),

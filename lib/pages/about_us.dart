@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -20,7 +21,7 @@ class about_us extends StatelessWidget with DrawerStates {
             child: Container(
                 width: 340,
                 child: Text(
-                  "Maati app works on the lines of AI based Crop Recommendation System which is proposed to give best fit prediction of crop that can be grown on a particular soil type taking into consideration the location and various other parameters.",
+                  translations.text('contact.intro'),
                   style: TextStyle(
                     fontSize: 20,
                   ),
@@ -30,7 +31,7 @@ class about_us extends StatelessWidget with DrawerStates {
             height: 20,
           ),
           Text(
-            "API USED:",
+            translations.text('contact.api'),
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
           ),
           SizedBox(
@@ -60,7 +61,7 @@ class about_us extends StatelessWidget with DrawerStates {
             height: 20,
           ),
           Text(
-            "Developers:",
+            translations.text('contact.dev'),
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
           ),
           SizedBox(
@@ -79,7 +80,7 @@ class about_us extends StatelessWidget with DrawerStates {
               },
               child: Center(
                 child: Text(
-                  "Ankit Jailwal, IIIrd Semester, CSE, DIT",
+                  translations.text('contact.d1'),
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
@@ -102,7 +103,7 @@ class about_us extends StatelessWidget with DrawerStates {
               },
               child: Center(
                 child: Text(
-                  "Shivam Sawarn, IIIrd Semester, CSE, DIT",
+                  translations.text('contact.d2'),
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
@@ -125,7 +126,7 @@ class about_us extends StatelessWidget with DrawerStates {
               },
               child: Center(
                 child: Text(
-                  "Rashi Srivastava, IIIrd Semester, EE, CUK",
+                  translations.text('contact.d3'),
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
@@ -136,7 +137,7 @@ class about_us extends StatelessWidget with DrawerStates {
             height: 20,
           ),
           Text(
-            "Github:",
+            translations.text('contact.g1'),
             style: TextStyle(fontSize: 26, fontWeight: FontWeight.w800),
           ),
           SizedBox(
@@ -155,7 +156,7 @@ class about_us extends StatelessWidget with DrawerStates {
               },
               child: Center(
                 child: Text(
-                  "Project Github Repository",
+                  translations.text('contact.git'),
                   style: TextStyle(
                       color: Colors.white, fontWeight: FontWeight.bold),//Bold
                 ),

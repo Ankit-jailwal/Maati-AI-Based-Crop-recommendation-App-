@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_cupertino_localizations: ^1.0.1
   line_awesome_flutter: ^1.0.1
   flutter_screenutil: ^1.0.2
   animated_theme_switcher: ^1.0.5
@@ -68,6 +71,7 @@ flutter:
   assets:
     - assets/images/
     - assets/
+    - assets/locale/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

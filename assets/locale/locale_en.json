@@ -1,0 +1,46 @@
+{
+    "login":{
+        "name": "Username",
+        "number": "Phone number",
+        "register": "Register",
+        "out": " Sign out",
+        "result": "Results",
+        "user": "Not {{username}}"
+    },
+    "menu": {
+        "head":"Main menu",
+        "b1": "Maati Cam",
+        "b2": "Maati NEWS",
+        "b3": "Maati analysis",
+        "b4": "Kisan call center",
+        "b5": "History",
+        "b6": "Contact us"
+    },
+    "cam": {
+        "b1": "View result"
+    },
+    "history": {
+        "p1": "No history available"
+    },
+    "contact": {
+        "intro": "Maati app works on the lines of AI based Crop Recommendation System which is proposed to give best fit prediction of crop that can be grown on a particular soil type taking into consideration the location and various other parameters.",
+        "api": "API used:",
+        "dev": "Developers:",
+        "d1": "Ankit Jailwal, IIIrd Semester, CSE, DIT",
+        "d2": "Shivam Sawarn, IIIrd Semester, CSE, DIT",
+        "d3": "Rashi Srivastava, IIIrd Semester, EE, CUK",
+        "g1": "Github:",
+        "git": "Project Github repository"
+    },
+    "output": {
+        "head": "Results",
+        "o1": "Crop:",
+        "o2": "Fertilisers required:",
+        "o3": "Cost of cultivation:",
+        "o4": "Expected revenues:",
+        "o5": "Quantity of seeds per hectare:",
+        "o6": "Duration of cultivation:",
+        "o7": "Demand of crop:",
+        "o8": "Crops for mixed cropping:"
+    }
+}

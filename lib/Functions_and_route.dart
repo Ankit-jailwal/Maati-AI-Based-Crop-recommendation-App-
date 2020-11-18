@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:ieeecrop/Weahter_API/resources/repository/remote/weather_api_provider.dart';
 import 'package:ieeecrop/main.dart';
+import 'package:ieeecrop/pages/Main_menu.dart';
 import 'package:ieeecrop/pages/login-page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
@@ -73,7 +74,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
      page=LoginPage();
      break;
     case mainRoute:
-      page=App();
+      page=Main_menu();
       break;
     default:
       page=Scaffold(
@@ -160,6 +161,49 @@ Future getoken(String email, String password) async{
     return null;
 }
 
+get_lang(String lang){
+  String l;
+  if(lang=='en')
+    {
+      l="English";
+    }
+  else if(lang=='hi'){
+    l="हिंदी";
+  }
+  else if(lang=='bn'){
+    l="বাংলা";
+  }
+  else if(lang=='mr')
+    {
+      l="मराठी";
+    }
+  else if(lang=='ta')
+  {
+    l="தமிழ்";
+  }
+  else if(lang=='te')
+  {
+    l="తెలుగు";
+  }
+  else if(lang=='kn')
+  {
+    l="ಕನ್ನಡ";
+  }
+  else if(lang=='ml')
+  {
+    l="മലയാളം";
+  }
+  else if(lang=='or')
+  {
+    l="ଓଡିଆ";
+  }
+  else if(lang=='pa')
+  {
+    l="ਪੰਜਾਬੀ";
+  }
+  return l;
+}
+
 Future crop_api_call(String base64,String temperature,String date,String pos) async{
   final String url="http://20.185.199.129:5000";
   Map<String, String>data= {
@@ -178,3 +222,4 @@ Future crop_api_call(String base64,String temperature,String date,String pos) as
   else
     return null;
 }
+

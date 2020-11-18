@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:ieeecrop/Language/translation/bloc/translation_bloc.dart';
+import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:ieeecrop/custom-widgets/core/custom-app-bar.dart';
 import 'package:ieeecrop/main.dart';
@@ -121,326 +123,339 @@ class _DrawermainState extends State<Drawermain>
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+
     return OrientationBuilder(
-      //Builder
       builder: (context, orientation) {
-        return Scaffold(
-          key: _scaffoldKey,
-          body: Column(
-            children: <Widget>[
-              BlocBuilder<DrawerBloc, DrawerStates>(
-                builder: (context, DrawerStates state) {
-                  return CustomAppBar(
-                    isBig: (state is UserScreen),
-                    height: (state is UserScreen) ? 250 : 150,
-                    leading: ThemeSwitcher(
-                      builder: (context) {
-                        return AnimatedCrossFade(
-                          duration: Duration(milliseconds: 1),
-                          crossFadeState: ThemeProvider.of(context)
-                                      .brightness == // light and dark theme
-                                  Brightness.light
-                              ? CrossFadeState.showFirst
-                              : CrossFadeState.showSecond,
-                          firstChild: IconButton(
-                            onPressed: () => ThemeSwitcher.of(context)
-                                .changeTheme(theme: kDarkTheme),
-                            icon: Container(
-                              child: Center(
-                                child: Icon(
-                                  LineAwesomeIcons.moon_1,
-                                  size: 34,
+        return BlocBuilder<TranslationBloc, TranslationState>(
+            builder: (context, state) {
+          return Scaffold(
+            key: _scaffoldKey,
+            body: Column(
+              children: <Widget>[
+                BlocBuilder<DrawerBloc, DrawerStates>(
+                  builder: (context, DrawerStates state) {
+                    return CustomAppBar(
+                      isBig: (state is UserScreen),
+                      height: (state is UserScreen) ? 250 : 150,
+                      leading: ThemeSwitcher(
+                        builder: (context) {
+                          return AnimatedCrossFade(
+                            duration: Duration(milliseconds: 1),
+                            crossFadeState: ThemeProvider.of(context)
+                                        .brightness == // light and dark theme
+                                    Brightness.light
+                                ? CrossFadeState.showFirst
+                                : CrossFadeState.showSecond,
+                            firstChild: IconButton(
+                              onPressed: () => ThemeSwitcher.of(context)
+                                  .changeTheme(theme: kDarkTheme),
+                              icon: Container(
+                                child: Center(
+                                  child: Icon(
+                                    LineAwesomeIcons.moon_1,
+                                    size: 34,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                          secondChild: IconButton(
-                            onPressed: () => ThemeSwitcher.of(context)
-                                .changeTheme(theme: kLightTheme),
-                            icon: Container(
-                              child: Center(
-                                  child: Icon(
-                                LineAwesomeIcons.sun,
-                                size: 34,
-                              )),
+                            secondChild: IconButton(
+                              onPressed: () => ThemeSwitcher.of(context)
+                                  .changeTheme(theme: kLightTheme),
+                              icon: Container(
+                                child: Center(
+                                    child: Icon(
+                                  LineAwesomeIcons.sun,
+                                  size: 34,
+                                )),
+                              ),
                             ),
-                          ),
-                        );
-                      },
-                    ),
-                    title: findSelectedTitle(state),
-                    trailing: IconButton(
-                      onPressed: () {
-                        _scaffoldKey.currentState.openEndDrawer();
-                      },
-                      icon: Container(
-                        child: Center(
-                          child: Icon(
-                            Icons.settings,
-                            size: 34,
+                          );
+                        },
+                      ),
+                      title: findSelectedTitle(state),
+                      trailing: IconButton(
+                        onPressed: () {
+                          _scaffoldKey.currentState.openEndDrawer();
+                        },
+                        icon: Container(
+                          child: Center(
+                            child: Icon(
+                              Icons.settings,
+                              size: 34,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    childHeight: 100,
-                  );
-                },
-              ),
-              Expanded(
-                child: BlocBuilder<DrawerBloc, DrawerStates>(
-                  //Blocbuilder
-                  builder: (context, DrawerStates state) {
-                    return state as Widget;
+                      childHeight: 100,
+                    );
                   },
                 ),
-              ),
-            ],
-          ),
-          endDrawer: ClipPath(
-            clipper: _DrawerClipper(),
-            child: Drawer(
-              child: SingleChildScrollView(
-                child: Container(
-                  padding: const EdgeInsets.only(top: 48, bottom: 32),
-                  height: (orientation == Orientation.portrait)
-                      ? MediaQuery.of(context).size.height
-                      : MediaQuery.of(context).size.width,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.of(context).pop();
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => mainpage()));
-                        },
-                        child: Container(
-                          height: 40,
-                          width: 40,
-                          margin: const EdgeInsets.only(right: 20, bottom: 20),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Theme.of(context).primaryColor,
-                          ),
-                          child: Icon(
-                            Icons.home,
-                            size: 34,
+                Expanded(
+                  child: BlocBuilder<DrawerBloc, DrawerStates>(
+                    //Blocbuilder
+                    builder: (context, DrawerStates state) {
+                      return state as Widget;
+                    },
+                  ),
+                ),
+              ],
+            ),
+            endDrawer: ClipPath(
+              clipper: _DrawerClipper(),
+              child: Drawer(
+                child: SingleChildScrollView(
+                  child: Container(
+                    padding: const EdgeInsets.only(top: 48, bottom: 32),
+                    height: (orientation == Orientation.portrait)
+                        ? MediaQuery.of(context).size.height
+                        : MediaQuery.of(context).size.width,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: <Widget>[
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pop();
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => mainpage()));
+                          },
+                          child: Container(
+                            height: 40,
+                            width: 40,
+                            margin:
+                                const EdgeInsets.only(right: 20, bottom: 20),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Theme.of(context).primaryColor,
+                            ),
+                            child: Icon(
+                              Icons.home,
+                              size: 34,
+                            ),
                           ),
                         ),
-                      ),
-                      DrawerItem(
-                        text: "My Profile",
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .ProfileEvent); //Drawer navigation to Profile page
-                        },
-                      ),
-                      DrawerItem(
-                        text: "Main menu",
-                        onPressed: () {
-                          Navigator.pop(context);
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .menu); //Drawer navigation to Event screen
-                        },
-                      ),
-                      DrawerItem(
-                        text: "Maati NEWS",
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .news); //Drawer navigation to Create event screen
-                        },
-                      ),
-
-                      DrawerItem(
-                        text: "Maati Analysis",
-                        onPressed:
-                            () {
+                        DrawerItem(
+                          text: translations.text('menu.b1'),
+                          onPressed: () {
+                            Navigator.pop(context);
+                            BlocProvider.of<DrawerBloc>(context).add(
+                                DrawerEvents
+                                    .menu); //Drawer navigation to Event screen
+                          },
+                        ),
+                        DrawerItem(
+                          text: translations.text('menu.b2'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                            BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
+                                .news); //Drawer navigation to Create event screen
+                          },
+                        ),
+                        DrawerItem(
+                          text: translations.text('menu.b3'),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Weather_app()));
+                          }, //Drawer navigation to About page (Under construction)
+                        ),
+                        DrawerItem(
+                          text: translations.text('menu.b4'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                            launch("tel://1800-180-1551");
+                          }, //Drawer navigation to About page (Under construction)
+                        ),
+                        DrawerItem(
+                          text: translations.text('menu.b5'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                            BlocProvider.of<DrawerBloc>(context)
+                                .add(DrawerEvents.history);
+                          }, //Drawer navigation to About page (Under construction)
+                        ),
+                        DrawerItem(
+                          text: translations.text('menu.b6'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                            BlocProvider.of<DrawerBloc>(context)
+                                .add(DrawerEvents.about);
+                          }, //Drawer navigation to About page (Under construction)
+                        ),
+                        DropdownButton(
+                            value: state.locale.languageCode,
+                            items: translations.supportedLocales().map((l) {
+                              return DropdownMenuItem(
+                                child: Text('${get_lang(l.languageCode)} (${l.languageCode})'),
+                                value: l.languageCode,
+                              );
+                            }).toList(),
+                            onChanged: (l) {
+                              BlocProvider.of<TranslationBloc>(context).add(
+                                SwitchLanguage(language: l),
+                              );
+                              print(l);
                               Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => Weather_app()));
-                            }, //Drawer navigation to About page (Under construction)
-                      ),
-                      DrawerItem(
-                        text: "Kisan call centre",
-                        onPressed:
-                            () {
-                              Navigator.of(context).pop();
-                              launch("tel://1800-180-1551");
-                        }, //Drawer navigation to About page (Under construction)
-                      ),
-                      DrawerItem(
-                        text: "History",
-                        onPressed:
-                            () {
-                          Navigator.of(context).pop();
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .history);
-                        }, //Drawer navigation to About page (Under construction)
-                      ),
-                      DrawerItem(
-                        text: "Contact us",
-                        onPressed:
-                            () {
-                          Navigator.of(context).pop();
-                          BlocProvider.of<DrawerBloc>(context).add(DrawerEvents
-                              .about);
-                        }, //Drawer navigation to About page (Under construction)
-                      ),
-                      FlatButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                          _openSignOutDrawer(context);
-                        },
-                        child: RichText(
-                          text: TextSpan(children: [
-                            TextSpan(
-                              text: "Not ${user.username}?",
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Theme.of(context).primaryColorDark,
-                                fontWeight: FontWeight.w500,
+                                context,
+                                MaterialPageRoute(builder: (context) => mainpage()),
+                              );
+                            }),
+                        FlatButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                            _openSignOutDrawer(context);
+                          },
+                          child: RichText(
+                            text: TextSpan(children: [
+                              TextSpan(
+                                text: "Not ${user.username}?",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Theme.of(context).primaryColorDark,
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
-                            ),
-                            TextSpan(
-                              text: "  Sign out", //Signout
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Theme.of(context).primaryColorDark,
-                                decoration: TextDecoration.underline,
-                                fontWeight: FontWeight.w800,
+                              TextSpan(
+                                text: translations.text('login.out'), //Signout
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Theme.of(context).primaryColorDark,
+                                  decoration: TextDecoration.underline,
+                                  fontWeight: FontWeight.w800,
+                                ),
                               ),
-                            ),
-                          ]),
+                            ]),
+                          ),
                         ),
-                      ),
-                      Spacer(),
-                      Padding(
-                        padding: EdgeInsets.all(20),
-                        child: Stack(
-                          //Social media handles
-                          children: <Widget>[
-                            Stack(
-                              alignment: Alignment.bottomRight,
-                              children: <Widget>[
-                                IgnorePointer(
-                                  child: Container(
-                                    // comment or change to transparent color
-                                    height: 150.0,
-                                    width: 150.0,
+                        Spacer(),
+                        Padding(
+                          padding: EdgeInsets.all(20),
+                          child: Stack(
+                            //Social media handles
+                            children: <Widget>[
+                              Stack(
+                                alignment: Alignment.bottomRight,
+                                children: <Widget>[
+                                  IgnorePointer(
+                                    child: Container(
+                                      // comment or change to transparent color
+                                      height: 150.0,
+                                      width: 150.0,
+                                    ),
                                   ),
-                                ),
-                                Transform.translate(
-                                  offset: Offset.fromDirection(
-                                      getRadiansFromDegree(270),
-                                      degOneTranslationAnimation.value * 100),
-                                  child: Transform(
+                                  Transform.translate(
+                                    offset: Offset.fromDirection(
+                                        getRadiansFromDegree(270),
+                                        degOneTranslationAnimation.value * 100),
+                                    child: Transform(
+                                      transform: Matrix4.rotationZ(
+                                          getRadiansFromDegree(
+                                              rotationAnimation.value))
+                                        ..scale(
+                                            degOneTranslationAnimation.value),
+                                      alignment: Alignment.center,
+                                      child: CircularButton(
+                                        color: Colors.blue,
+                                        width: 50,
+                                        height: 50,
+                                        icon: Icon(
+                                          FontAwesomeIcons.instagram,
+                                          color: Colors.white,
+                                        ),
+                                        onClick: () {
+                                          _launchInBrowser(_launchURL_insta);
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                  Transform.translate(
+                                    offset: Offset.fromDirection(
+                                        getRadiansFromDegree(225),
+                                        degTwoTranslationAnimation.value * 100),
+                                    child: Transform(
+                                      transform: Matrix4.rotationZ(
+                                          getRadiansFromDegree(
+                                              rotationAnimation.value))
+                                        ..scale(
+                                            degTwoTranslationAnimation.value),
+                                      alignment: Alignment.center,
+                                      child: CircularButton(
+                                        color: Colors.black,
+                                        width: 50,
+                                        height: 50,
+                                        icon: Icon(
+                                          FontAwesomeIcons.facebook,
+                                          color: Colors.white,
+                                        ),
+                                        onClick: () {
+                                          _launchInBrowser(_launchURL_fb);
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                  Transform.translate(
+                                    offset: Offset.fromDirection(
+                                        getRadiansFromDegree(180),
+                                        degThreeTranslationAnimation.value *
+                                            100),
+                                    child: Transform(
+                                      transform: Matrix4.rotationZ(
+                                          getRadiansFromDegree(
+                                              rotationAnimation.value))
+                                        ..scale(
+                                            degThreeTranslationAnimation.value),
+                                      alignment: Alignment.center,
+                                      child: CircularButton(
+                                        color: Colors.orangeAccent,
+                                        width: 50,
+                                        height: 50,
+                                        icon: Icon(
+                                          FontAwesomeIcons.linkedin,
+                                          color: Colors.white,
+                                        ),
+                                        onClick: () {
+                                          _launchInBrowser(_launchURL_lin);
+                                        },
+                                      ),
+                                    ),
+                                  ),
+                                  Transform(
                                     transform: Matrix4.rotationZ(
                                         getRadiansFromDegree(
-                                            rotationAnimation.value))
-                                      ..scale(degOneTranslationAnimation.value),
+                                            rotationAnimation.value)),
                                     alignment: Alignment.center,
                                     child: CircularButton(
-                                      color: Colors.blue,
-                                      width: 50,
-                                      height: 50,
+                                      color: Colors.red,
+                                      width: 60,
+                                      height: 60,
                                       icon: Icon(
-                                        FontAwesomeIcons.instagram,
+                                        Icons.menu,
                                         color: Colors.white,
                                       ),
                                       onClick: () {
-                                        _launchInBrowser(_launchURL_insta);
+                                        if (animationController.isCompleted) {
+                                          animationController.reverse();
+                                        } else {
+                                          animationController.forward();
+                                        }
                                       },
                                     ),
-                                  ),
-                                ),
-                                Transform.translate(
-                                  offset: Offset.fromDirection(
-                                      getRadiansFromDegree(225),
-                                      degTwoTranslationAnimation.value * 100),
-                                  child: Transform(
-                                    transform: Matrix4.rotationZ(
-                                        getRadiansFromDegree(
-                                            rotationAnimation.value))
-                                      ..scale(degTwoTranslationAnimation.value),
-                                    alignment: Alignment.center,
-                                    child: CircularButton(
-                                      color: Colors.black,
-                                      width: 50,
-                                      height: 50,
-                                      icon: Icon(
-                                        FontAwesomeIcons.facebook,
-                                        color: Colors.white,
-                                      ),
-                                      onClick: () {
-                                        _launchInBrowser(_launchURL_fb);
-                                      },
-                                    ),
-                                  ),
-                                ),
-                                Transform.translate(
-                                  offset: Offset.fromDirection(
-                                      getRadiansFromDegree(180),
-                                      degThreeTranslationAnimation.value * 100),
-                                  child: Transform(
-                                    transform: Matrix4.rotationZ(
-                                        getRadiansFromDegree(
-                                            rotationAnimation.value))
-                                      ..scale(
-                                          degThreeTranslationAnimation.value),
-                                    alignment: Alignment.center,
-                                    child: CircularButton(
-                                      color: Colors.orangeAccent,
-                                      width: 50,
-                                      height: 50,
-                                      icon: Icon(
-                                        FontAwesomeIcons.linkedin,
-                                        color: Colors.white,
-                                      ),
-                                      onClick: () {
-                                        _launchInBrowser(_launchURL_lin);
-                                      },
-                                    ),
-                                  ),
-                                ),
-                                Transform(
-                                  transform: Matrix4.rotationZ(
-                                      getRadiansFromDegree(
-                                          rotationAnimation.value)),
-                                  alignment: Alignment.center,
-                                  child: CircularButton(
-                                    color: Colors.red,
-                                    width: 60,
-                                    height: 60,
-                                    icon: Icon(
-                                      Icons.menu,
-                                      color: Colors.white,
-                                    ),
-                                    onClick: () {
-                                      if (animationController.isCompleted) {
-                                        animationController.reverse();
-                                      } else {
-                                        animationController.forward();
-                                      }
-                                    },
-                                  ),
-                                )
-                              ],
-                            )
-                          ],
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        );
+          );
+        });
       },
     );
   }
@@ -451,21 +466,15 @@ class _DrawermainState extends State<Drawermain>
 String findSelectedTitle(DrawerStates state) {
   if (state is UserScreen) {
     return "User Profile";
-  }
-   else if (state is maaticam) {
-    return "Maati Cam";
-  }
-  else if (state is Main_menu) {
-    return "Main menu";
-  }
-   else if (state is history_screen) {
-    return "History";
-  }
-   else if(state is Maati_news)
-       return "Maati NEWS";
-  else if(state is about_us)
-    return "About Us";
-
+  } else if (state is maaticam) {
+    return translations.text('menu.b1');
+  } else if (state is Main_menu) {
+    return translations.text('menu.head');
+  } else if (state is history_screen) {
+    return translations.text('menu.b5');
+  } else if (state is Maati_news)
+    return translations.text('menu.b2');
+  else if (state is about_us) return translations.text('menu.b6');
 }
 
 //Signout animation and functionality

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:ieeecrop/Navigate_to_weather_api.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -27,37 +28,37 @@ class Main_menu_State extends State<Main_menu> {
 
 class Home extends StatelessWidget {
   Items item1 = new Items(
-    title: "Maati Cam",
+    title: translations.text('menu.b1'),
     subtitle: "",
     img: "assets/images/camera.png",
     page:"main",  );
 
   Items item2 = new Items(
-    title: "Maati NEWS",
+    title: translations.text('menu.b2'),
     subtitle: "",
     img: "assets/images/news.png",
     page:"news",
   );
   Items item3 = new Items(
-    title: "Maati Analysis",
+    title: translations.text('menu.b3'),
     subtitle: "",
     img: "assets/images/analysis.png",
     page:"analysis",
   );
   Items item4 = new Items(
-    title: "Kisan call centre",
+    title: translations.text('menu.b4'),
     subtitle: "",
     img: "assets/images/phone.png",
     page:"call",
   );
   Items item5 = new Items(
-    title: "History",
+    title: translations.text('menu.b5'),
     subtitle: "",
     img: "assets/images/history.png",
     page:"history",
   );
   Items item6 = new Items(
-    title: "Contact us",
+    title: translations.text('menu.b6'),
     subtitle: "",
     img: "assets/images/contact.png",
     page:"contact",
