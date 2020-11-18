@@ -41,9 +41,11 @@ Multiple datasets have been used for training and obtaining relevant output purp
 - After crop prediction the relevant details related to the crops will be fetched and shown as the output to the users.
 - Users can also access other features of the app such as: Kisan Call Centre, Maati News for agriculture news and happenings, Maati analysis for weather updates, History of previous recommendations etc. 
 
-**"The whole app works on cloud Backend"**
-
 All the files related to frontend can be found here: https://github.com/Rashi-Srivastava/Maati-/tree/frontend
+
+**Screenshots and app related images can be found here: https://github.com/Rashi-Srivastava/Maati-/tree/main/Images**
+
+**All the videos can be found here: https://github.com/Rashi-Srivastava/Maati-/tree/main/Video**
 
 #### Individual contribution from Team members - 
 
@@ -51,8 +53,10 @@ Frontend Development - Ankit Jailwal
 
 Backend Development - Shivam Sawarn and Rashi Srivastava
 
+### UPDATE-
+##### Multi Language support is available for 10+ languages in this prototype.
 
-##### The Multi Langugae support is not available yet for the prototype as APIs used for them are generally paid.
+## "The whole app works on Cloud Backend powered by AI"
 
 ##### The whole app is a prototype which has been made for project purposes only.
 
