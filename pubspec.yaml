@@ -44,6 +44,7 @@ dependencies:
   cached_network_image: ^2.0.0
   dio: ^3.0.10
   pretty_dio_logger: ^1.1.1
+  giffy_dialog: ^1.8.0
 
 
   # The following adds the Cupertino Icons font to your application.

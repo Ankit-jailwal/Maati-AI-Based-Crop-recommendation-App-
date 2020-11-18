@@ -5,6 +5,8 @@
         "register": "Register",
         "out": " Sign out",
         "result": "Results",
+        "er": "Something went wrong!",
+        "des": "Please re-enter your username and phone number.",
         "user": "Not {{username}}"
     },
     "menu": {

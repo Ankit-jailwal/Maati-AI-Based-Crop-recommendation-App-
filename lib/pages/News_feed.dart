@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ieeecrop/Floating_language_button/Language_button.dart';
 import 'package:ieeecrop/bloc/drawer_bloc.dart';
 import 'package:webfeed/webfeed.dart';
 import 'package:http/http.dart' as http;
@@ -19,7 +18,7 @@ class Maati_news extends StatefulWidget with DrawerStates{
 class Maati_newsState extends State<Maati_news> {
   //
   static const String FEED_URL =
-      'https://rss.app/feeds/N67RQQH3S9v46qL8.xml';
+      'https://rss.app/feeds/ksPAwI9FdqDoNvI8.xml';
   RssFeed _feed;
   String _title;
   static const String loadingFeedMsg = 'Loading Feed...';
@@ -87,7 +86,7 @@ class Maati_newsState extends State<Maati_news> {
     return Text(
       title,
       style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500),
-      maxLines: 2,
+      maxLines: 3,
       overflow: TextOverflow.ellipsis,
     );
   }
@@ -164,10 +163,6 @@ class Maati_newsState extends State<Maati_news> {
           body(),
           Align(
             alignment: Alignment.bottomRight,
-            child: Padding(
-              padding: EdgeInsets.all(10),
-              child: FancyFab(),
-            ),
           )
         ],
       )

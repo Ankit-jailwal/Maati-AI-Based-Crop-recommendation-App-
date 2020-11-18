@@ -1,12 +1,20 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:giffy_dialog/giffy_dialog.dart';
 import 'package:ieeecrop/Animation/FadeAnimation.dart';
 import 'package:ieeecrop/Language/translation/global_translation.dart';
 import 'package:ieeecrop/main.dart';
 import 'package:ieeecrop/second_screen.dart';
 import 'package:ieeecrop/services/authentication-service.dart';
 
-
+const List<Key> keys = [
+  Key("Network"),
+  Key("NetworkDialog"),
+  Key("Flare"),
+  Key("FlareDialog"),
+  Key("Asset"),
+  Key("AssetDialog")
+];
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -117,10 +125,9 @@ class _LoginPageState extends State<LoginPage> {
                                 //Authentication and authorization
                                final String email = namecontroller.text;
                                final String password = phonecontroller.text;
-                               print("$email $password");
+                               //print("$email $password");
                                final _token = await AuthenticationService()
                                    .login(email, password);
-                               print("aksdlalksklcksa:"+_token);
                                if (_token != null) {
                                  var data = json.decode(_token);
                                  var rest = data["token"] as String;
@@ -128,7 +135,30 @@ class _LoginPageState extends State<LoginPage> {
                                  print(rest);
                                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => mainpage()));
                                } else {
-                                 //open up box COnstructor(message: res["message"])
+                                 showDialog(
+                                     context: context,
+                                     builder: (_) => NetworkGiffyDialog(
+                                       key: keys[1],
+                                       image: Image.network(
+                                         "https://media.giphy.com/media/l0DAGyhYqdLsPREJO/giphy.gif",
+                                         fit: BoxFit.cover,
+                                       ),
+                                       entryAnimation: EntryAnimation.TOP_LEFT,
+                                       title: Text(
+                                         'Something went wrong!',
+                                         textAlign: TextAlign.center,
+                                         style: TextStyle(
+                                             fontSize: 22.0, fontWeight: FontWeight.w600),
+                                       ),
+                                       description: Text(
+                                         "Please re-enter your username and phone number.",
+                                         textAlign: TextAlign.center,
+                                       ),
+                                       onlyOkButton: true,
+                                       onOkButtonPressed: (){
+                                         Navigator.pop(context);
+                                       },
+                                     ));
                                }
                               },
                               child: Center(

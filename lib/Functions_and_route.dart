@@ -148,7 +148,6 @@ void logout() async{
 
 Future getoken(String email, String password) async{
   final String url="http://13.76.211.170:4000/user/login";
-
   Map<String, String>data= {
     "email": email,
     "password": password
