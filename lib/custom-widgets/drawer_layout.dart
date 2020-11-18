@@ -241,7 +241,7 @@ class _DrawermainState extends State<Drawermain>
                             Navigator.pop(context);
                             BlocProvider.of<DrawerBloc>(context).add(
                                 DrawerEvents
-                                    .menu); //Drawer navigation to Event screen
+                                    .Createevent); //Drawer navigation to Event screen
                           },
                         ),
                         DrawerItem(
