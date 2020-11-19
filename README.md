@@ -47,6 +47,8 @@ All the files related to frontend can be found here: https://github.com/Rashi-Sr
 
 **All the videos can be found here: https://github.com/Rashi-Srivastava/Maati-/tree/main/Video**
 
+#### The app can be accessed by downloading this file: https://github.com/Rashi-Srivastava/Maati-/tree/main/App
+
 #### Individual contribution from Team members - 
 
 Frontend Development - Ankit Jailwal
