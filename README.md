@@ -2,11 +2,11 @@
 ## AI BASED CROP RECOMMENDATION SYSTEM
 
 ### Developers- 
-Rashi Srivastava, IIIrd Semester - rashisrivastava@ieee.org
+Rashi Srivastava, IVth Semester - rashisrivastava@ieee.org
 
-Ankit Jailwal, IIIrd Semester - jailwalankit@gmail.com
+Ankit Jailwal, IVth Semester - jailwalankit@gmail.com
 
-Shivam Sawarn, IIIrd Semester - shivamsawarn@ieee.org
+Shivam Sawarn, IVth Semester - shivamsawarn@ieee.org
 
 ### Click on logo to view project video
 [![Click here to view project video](https://github.com/Ankit-jailwal/Maati-AI-Based-Crop-recommendation-App-/blob/main/maati%20main.png)](https://youtu.be/VEyWyYo9Lbw)
