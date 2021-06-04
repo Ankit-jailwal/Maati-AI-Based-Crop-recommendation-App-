@@ -8,6 +8,7 @@ Ankit Jailwal, IIIrd Semester - jailwalankit@gmail.com
 
 Shivam Sawarn, IIIrd Semester - shivamsawarn@ieee.org
 
+### Click on logo to view project video
 [![Click here to view project video](https://github.com/Ankit-jailwal/Maati-AI-Based-Crop-recommendation-App-/blob/main/maati%20main.png)](https://www.youtube.com/watch?v=HD6rS89YKGM&t=36s)
 
 #### Problem Statement - 
