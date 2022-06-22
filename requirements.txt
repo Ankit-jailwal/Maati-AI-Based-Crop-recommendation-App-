@@ -9,6 +9,6 @@ geopandas==0.6.1
 matplotlib==3.2.2
 pandas==1.0.5
 requests==2.24.0
-numpy==1.19.2
+numpy==1.22.0
 reverse_geocoder==1.5.1
 scikit_learn==0.23.2
