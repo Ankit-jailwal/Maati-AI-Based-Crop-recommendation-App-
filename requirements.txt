@@ -1,5 +1,5 @@
 Flask==1.1.2
-joblib==0.16.0
+joblib==1.2.0
 imageio==2.9.0
 Keras==2.4.3
 geopy==2.0.0
